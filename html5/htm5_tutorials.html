@@ -9,10 +9,89 @@
 </head>
 
 <body>
+    <h1>REGİSTER</h1>
+    <form method="get" autocomplete="on">
+        <table  width="100%">
+            <tbody>
+                <tr>
+                    <td>ADINIZ</td>
+                    <td><input type="text" placeholder="Lütfen adınızı yazınız" title="Lütfen adınızı yazınız" required autofocus /> </td>
+                </tr>
+
+                <tr>
+                    <td>SOYADINIZ</td>
+                    <td><input type="text" placeholder="Lütfen soyadınızı yazınız" title="Lütfen soyadınızı yazınız" required /> </td>
+                </tr>
+
+                <tr>
+                    <td>EMAİL</td>
+                    <td><input type="email" placeholder="Lütfen email yazınız"  title="Lütfen emailinizi yazınız" required /> </td>
+                </tr>
+
+                <tr>
+                    <td>PASSWORD</td>
+                    <td><input type="password" placeholder="Lütfen şifrenizi yazınız"  title="Lütfen şifrenizi yazınız" required /> </td>
+                </tr>
+
+                <tr>
+                    <td>CİNSİYET</td>
+                    <td>
+                        <input type="radio"  title="Lütfen seçiniz"  name="gender" checked /> Bayan 
+                        <input type="radio"  title="Lütfen seçiniz"  name="gender"  /> Erkek
+                    </td>
+                </tr> 
+
+                <tr>
+                    <td>DOĞUM TARİHİ</td>
+                    <td><input type="datetime-local" title="Lütfen doğum giriniz" required /> </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <input type="reset" value="Temizle" />
+                        <button type="submit"> Gönder </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+
+    <br><br><br><br><br>
 
     <!-- TABLE  -->
+    <table border="1" width="100%">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>surname</th>
+                <th>age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Hamit</td>
+                <td>Mızrak</td>
+                <td>37</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Hamit</td>
+                <td>Mızrak</td>
+                <td>37</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Hamit</td>
+                <td>Mızrak</td>
+                <td>37</td>
+            </tr>
+        </tbody>
+    </table>
 
     <!-- FORM -->
+    <br><br><br><br><br>
 
     <!-- https://www.maps.ie/create-google-map/ -->
 
