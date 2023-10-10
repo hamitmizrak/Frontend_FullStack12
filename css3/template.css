@@ -125,3 +125,32 @@ li:hover {
     content: "";
     display: block;
 }
+
+/*Selector*/
+/* 
+*     : Hepsi
+p     : tüm p 
+div,p : tüm div ve tüm p 
+div>p : parent:div child:p 
+div~p : div ile p aynı seviyese ve tüm p 
+div+p : div ile p aynı seviyede sadece 1 tane p  
+*/
+div,p{
+    background-color: blue;
+}
+
+div>p{
+    background-color: yellow;
+}
+
+div~p{
+    background-color: black;
+    color:white;
+}
+
+div+p{
+    background-color: orange;
+    color:white;
+}
+
+
