@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    margin:0 50px;
+}
+
 h4{
     color:yellow;
 }
@@ -28,11 +32,13 @@ h3{
     color:rgb(0,255,0); */
     color:rgba(0,255,0,0.9);
     background-color: black;
-    /* padding: ic bosluk padding-top:25px;
+    /* 
+    padding: ic bosluk padding-top:25px;
     padding-right:25px;
     padding-bottom:25px;
     padding-left:25px;
-    padding: 25px; */
+    padding: 25px; 
+    */
     padding: 50px 25px;
     margin:10px;
     border:2px solid blue;
@@ -60,4 +66,29 @@ h3{
     display: block;
     width: 50%;
     height: 700px;
+}
+
+ul{
+    list-style-type: none;
+}
+li{
+    display: inline-block;
+    background-color: black;
+    color:white;
+    padding: 10px;
+    cursor: pointer;
+    transition: 2s all;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+li:hover{
+    background-color: white;
+    color:black;
+    transform: rotate(360deg);
+}
+
+.paragraph_menu{
+   text-align: justify; margin-top:25px;
+   column-count: 2;
+   column-rule: 1px solid red;
 }
