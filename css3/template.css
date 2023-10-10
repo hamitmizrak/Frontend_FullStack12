@@ -1,3 +1,9 @@
+*{
+    margin:0;
+    padding:0px;
+    box-sizing: border-box;
+}
+
 h4{
     color:yellow;
 }
@@ -21,9 +27,7 @@ h3{
     color:#aa99ff;
     color:rgb(0,255,0); */
     color:rgba(0,255,0,0.9);
-
     background-color: black;
-
     /* padding: ic bosluk padding-top:25px;
     padding-right:25px;
     padding-bottom:25px;
@@ -31,20 +35,29 @@ h3{
     padding: 25px; */
     padding: 50px 25px;
     margin:10px;
-
     border:2px solid blue;
-
     text-align: justify;
     text-decoration: underline;
     text-indent: 50px;
     text-transform: capitalize;
     text-shadow: 1px 1px 20px yellow;
-
     word-spacing: 5px;
     letter-spacing: 1px;
     line-height: 20px;
-
     font-size: 20px;
     font-weight: 900;
     font-style: italic;
+    cursor: pointer;
+}
+
+#param_id:hover{
+    color:black;
+    background-color: rgba(0,255,0,0.9);
+    visibility: none;
+    display: none;
+    display: inline;
+    display: inline-block;
+    display: block;
+    width: 50%;
+    height: 700px;
 }
