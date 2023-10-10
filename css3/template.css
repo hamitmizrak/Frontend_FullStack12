@@ -1,19 +1,11 @@
-*{
-    margin:0;
-    padding:0px;
-    box-sizing: border-box;
-}
 
-body{
-    margin:0 50px;
-}
 
-h4{
+/* h4{
     color:yellow;
-}
+} */
 
 /* css comment*/
-h3{
+/* h3{
     color:orange!important;
 }
 
@@ -23,22 +15,19 @@ h3{
 
 .h3_class{
     background-color: brown;
-}
+} */
 /* +++++++++++++++++++++++++++++++++++++++++ */
-#param_id{
-    /* color:red;
+/* #param_id{
+     color:red;
     color:#a9f;
     color:#aa99ff;
-    color:rgb(0,255,0); */
+    color:rgb(0,255,0); 
     color:rgba(0,255,0,0.9);
-    background-color: black;
-    /* 
-    padding: ic bosluk padding-top:25px;
+    background-color: black; 
     padding-right:25px;
     padding-bottom:25px;
     padding-left:25px;
     padding: 25px; 
-    */
     padding: 50px 25px;
     margin:10px;
     border:2px solid blue;
@@ -54,9 +43,9 @@ h3{
     font-weight: 900;
     font-style: italic;
     cursor: pointer;
-}
+} */
 
-#param_id:hover{
+/* #param_id:hover{
     color:black;
     background-color: rgba(0,255,0,0.9);
     visibility: none;
@@ -66,6 +55,22 @@ h3{
     display: block;
     width: 50%;
     height: 700px;
+} */
+
+
+*{
+    margin:0;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --template_bg_color:black;
+    --template_color:white;
+}
+
+body{
+    margin:0 50px;
 }
 
 ul{
@@ -73,8 +78,8 @@ ul{
 }
 li{
     display: inline-block;
-    background-color: black;
-    color:white;
+    background-color: var(--template_bg_color);
+    color: var(--template_color);
     padding: 10px;
     cursor: pointer;
     transition: 2s all;
@@ -82,8 +87,8 @@ li{
     text-transform: uppercase;
 }
 li:hover{
-    background-color: white;
-    color:black;
+    background-color: var(--template_color);
+    color:var(--template_bg_color);
     transform: rotate(360deg);
 }
 
@@ -91,4 +96,15 @@ li:hover{
    text-align: justify; margin-top:25px;
    column-count: 2;
    column-rule: 1px solid red;
+}
+
+.my_image{
+    max-width: 100%;
+    margin:20px auto;
+    transition: 2s all;
+}
+
+.my_image:hover{
+    opacity: 0.8;
+    border:2px solid lightblue;
 }
