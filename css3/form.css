@@ -35,7 +35,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    /* box-shadow */
     -webkit-box-shadow: 11px 4px 18px 5px rgba(237, 61, 111, 1);
     -moz-box-shadow: 11px 4px 18px 5px rgba(237, 61, 111, 1);
     box-shadow: 11px 4px 18px 5px rgba(237, 61, 111, 1);
@@ -62,13 +62,24 @@ h1 {
     padding-left: 2rem;
 }
 
+/* Input Focus */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    background-color: var(--template_color);
+    color: var(--template_bg_color);
+}
+
 /* Button */
 .button_data {
     margin-top: 5%;
     margin-left: 15%;
 }
 
-.button_data>button {
+/* .button_data>button */
+button[type="reset"],
+button[type="submit"],
+button[type="button"] {
     width: 25%;
     font-size: 0.8rem;
     background-color: chocolate;
