@@ -1,47 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form UI </title>
+
+    <!-- External CSS -->
     <link rel="stylesheet" href="form.css">
 
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+
+
 </head>
+
 <body>
 
     <h1 class="heading">Register</h1>
-    <form action="#!" method="get" autocomplete="on">
+    <p style="text-align: center;"> <i>Html5 ve Css3 ile Register Uygulaması yapacağız</i> </p>
+    <br>
 
-        <!-- NICKNAME -->
-        <div class="input_div">
-            <i class="fa-solid fa-address-card"></i>
-            <input type="text" class="input_class" id="nickname_data"  name="nickname_data" 
-            title="Your Nick name ..."   placeholder=" Your Nick name ... " required autofocus >
-        </div>
+    <div class="container_data">
+        <form action="#!" method="get" autocomplete="on">
 
-         <!-- EMAIL -->
-         <div class="input_div">
-            <i class="fa-solid fa-envelope-circle-check"></i>
-            <input type="email" class="input_class" id="email_data" name="email_data"  
-            title="Your Email Address ..."  placeholder=" Your Email Address .." required  >
-        </div>
+            <!-- NICKNAME -->
+            <div class="input_div">
+                <i id="icon_id" class="fa-solid fa-address-card"></i>
+                <input type="text" class="input_class" id="nickname_data" name="nickname_data"
+                    title="Your Nick name ..." placeholder=" Your Nick name ... " required autofocus>
+            </div>
 
-         <!-- PASSWORD -->
-         <div class="input_div">
-            <i class="fa-solid fa-lock"></i>
-            <input type="text" class="input_class" id="password_data"  name="password_data" 
-            title="Your password ..."  placeholder="Your password ... " required  >
-        </div>
+            <!-- EMAIL -->
+            <div class="input_div">
+                <i id="icon_id" class="fa-solid fa-envelope-circle-check"></i>
+                <input type="email" class="input_class" id="email_data" name="email_data" title="Your Email Address ..."
+                    placeholder=" Your Email Address .." required>
+            </div>
 
-         <!-- BUTTON -->
-        <div class="button_data">
-            <i class="fa-solid fa-play"></i>
-            <input type="reset" class="button_style" id="button_reset" name="button_reset" value="Temizle"  />
-            <button type="submit" id="button_submit" name="button_submit">Gönder</button>
-        </div>
-    </form>
-    
+            <!-- PASSWORD -->
+            <div class="input_div">
+                <i id="icon_id" class="fa-solid fa-lock"></i>
+                <input type="text" class="input_class" id="password_data" name="password_data" title="Your password ..."
+                    placeholder="Your password ... " required>
+            </div>
+
+            <!-- BUTTON -->
+            <div class="button_data">
+                <button type="reset" id="button_reset" name="button_reset"> <i class="fa-solid fa-trash"></i> </button>
+                <button type="submit" id="button_submit" name="button_submit" style="background-color:blue"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </form>
+    </div>
+
 </body>
+
 </html>
