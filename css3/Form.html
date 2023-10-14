@@ -45,25 +45,25 @@
             <!-- PASSWORD -->
             <div class="input_div">
                 <i id="icon_id" class="fa-solid fa-lock"></i>
-                <input type="password" class="input_class" id="password_data" name="password_data" title="Your password ..."
-                    placeholder="Your password ... " required>
+                <input type="password" class="input_class" id="password_data" name="password_data"
+                    title="Your password ..." placeholder="Your password ... " required>
             </div>
 
             <!-- BUTTON -->
             <div class="button_data">
                 <button type="reset" id="button_reset" name="button_reset"> <i class="fa-solid fa-trash"></i> </button>
-                <button type="submit" id="button_submit" name="button_submit" style="background-color:blue"><i class="fa-solid fa-paper-plane"></i></button>
-                <button type="button"  style="background-color:orange"><i class="fa-regular fa-registered"></i></button>
+                <button type="submit" id="button_submit" name="button_submit" style="background-color:blue"><i
+                        class="fa-solid fa-paper-plane"></i></button>
+                <button type="button" style="background-color:orange"><i class="fa-regular fa-registered"></i></button>
             </div>
         </form>
     </div>
 
-<div style="width: 100%; background-color: black;">
-    <div style="width: 40%; display: inline-block; background-color: blue;">1.ALAN</div>
-    <div style="width: 48%; display: inline-block; background-color: chartreuse;">2.ALAN</div>
-    <div style="width: 10%; display: inline-block; background-color: chocolate;">3.ALAN</div>
-   
-</div>
+    <div style="width: 100%; background-color: black;">
+        <div style="width: 40%; display: inline-block; background-color: blue;">1.ALAN</div>
+        <div style="width: 48%; display: inline-block; background-color: chartreuse;">2.ALAN</div>
+        <div style="width: 10%; display: inline-block; background-color: chocolate;">3.ALAN</div>
+    </div>
 
 
     <div class="parent" style="background-color: red;">
@@ -73,37 +73,49 @@
     </div>
 
     <style>
-        *{
-            margin:0;
+        * {
+            margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        .parent{
+
+        .parent {
             width: 98%;
             height: 200px;
 
             display: flex;
-            flex-direction: column;          /*  block olsun */
-            flex-direction: row-reverse;     /*  X düzleminde ters takla attı. */
-            flex-direction: column-reverse;  /*  Y düzleminde ters takla attı. */
-            flex-direction: row;             /*  inline olsun */
-          
-            align-items: center;             /* flex-start,center, flex-end (Y) */
-            
-            justify-content: space-between;  /*  (X) düzleminde itemlar arasında eşit uzaklığı sağlar */
-            justify-content: flex-start;     /*  (X) düzleminde sola yasla*/
-            justify-content: flex-end;       /*  (X) düzleminde sağa yasla*/
-            justify-content: center;         /*  (X) düzleminde left,center,right  */
+            flex-direction: column;
+            /*  block olsun */
+            flex-direction: row-reverse;
+            /*  X düzleminde ters takla attı. */
+            flex-direction: column-reverse;
+            /*  Y düzleminde ters takla attı. */
+            flex-direction: row;
+            /*  inline olsun */
+
+            align-items: center;
+            /* flex-start,center, flex-end (Y) */
+
+            justify-content: space-between;
+            /*  (X) düzleminde itemlar arasında eşit uzaklığı sağlar */
+            justify-content: flex-start;
+            /*  (X) düzleminde sola yasla*/
+            justify-content: flex-end;
+            /*  (X) düzleminde sağa yasla*/
+            justify-content: center;
+            /*  (X) düzleminde left,center,right  */
 
             flex-wrap: wrap;
-            flex-wrap: nowrap;  /* nowrap: responsive ve defaultta gelen özellikler*/
+            flex-wrap: nowrap;
+            /* nowrap: responsive ve defaultta gelen özellikler*/
         }
 
-        .child{
+        .child {
             padding: 1rem;
-            
+
         }
     </style>
 
 </body>
+
 </html>
