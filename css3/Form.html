@@ -17,7 +17,6 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
 
-
 </head>
 
 <body>
@@ -59,6 +58,44 @@
         </form>
     </div>
 
-</body>
+    <div class="parent" style="background-color: red;">
+        <div class="child" style="background-color: blue;">1.KUTU</div>
+        <div class="child" style="background-color: orange;">2.KUTU</div>
+        <div class="child" style="background-color: aqua;">3.KUTU</div>
+    </div>
 
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .parent{
+            width: 98%;
+            height: 200px;
+
+            display: flex;
+            flex-direction: column;          /*  block olsun */
+            flex-direction: row-reverse;     /*  X düzleminde ters takla attı. */
+            flex-direction: column-reverse;  /*  Y düzleminde ters takla attı. */
+            flex-direction: row;             /*  inline olsun */
+          
+            align-items: center;             /* flex-start,center, flex-end (Y) */
+            
+            justify-content: space-between;  /*  (X) düzleminde itemlar arasında eşit uzaklığı sağlar */
+            justify-content: flex-start;     /*  (X) düzleminde sola yasla*/
+            justify-content: flex-end;       /*  (X) düzleminde sağa yasla*/
+            justify-content: center;         /*  (X) düzleminde left,center,right  */
+
+            flex-wrap: wrap;
+            flex-wrap: nowrap;  /* nowrap: responsive ve defaultta gelen özellikler*/
+        }
+
+        .child{
+            padding: 1rem;
+            
+        }
+    </style>
+
+</body>
 </html>
