@@ -127,18 +127,18 @@
 
 /////////////////////////////////////////////////////////////////////////////////$personName23
 // MATH
-console.log(Math.min(3,5,6,9,500,-100));
-console.log(Math.max(3,5,6,9,500,-100));
-console.log(Math.sqrt(16));
-console.log(Math.pow(2,5));
-console.log(Math.floor(8.9));
-console.log(Math.ceil(8.1));
-console.log(Math.round(3.4));
-console.log(Math.round(3.5));
-console.log(Math.floor(Math.random()*10+1));
+// console.log(Math.min(3,5,6,9,500,-100));
+// console.log(Math.max(3,5,6,9,500,-100));
+// console.log(Math.sqrt(16));
+// console.log(Math.pow(2,5));
+// console.log(Math.floor(8.9));
+// console.log(Math.ceil(8.1));
+// console.log(Math.round(3.4));
+// console.log(Math.round(3.5));
+// console.log(Math.floor(Math.random()*10+1));
 
-console.log(Math.sin(-1));
-console.log(Math.cos(-1));
+// console.log(Math.sin(-1));
+// console.log(Math.cos(-1));
 
 //// MATH ÖDEVİ
 // Math Ödev
@@ -160,3 +160,50 @@ console.log(Math.cos(-1));
 // 6-)çıkan sonucu 5 bölsün 6/5=1
 // 7-) iki sayı arasından karşılaştırma yapsın en küçüğünü alsın ve 1 ve 5
 // 8-) küçük sayı eğer tekse 3 eklesin çiftse 5 eklesin 
+
+///////////////////////////////////////////////////////////
+// SAYI 
+let number=50;
+console.log(number);
+console.log(typeof number);
+
+
+let number2=Number("50.23") ;
+console.log(number2);
+console.log(typeof number2);
+
+// sonuç: false ise sayıdır.
+console.log(!isNaN(44));
+
+let bilimsel=1200000;
+console.log(bilimsel);
+
+let bilimsel2=12E+5;
+console.log(bilimsel2);
+
+let bilimsel3=12E-5;
+console.log(bilimsel3);
+
+const number4=12.45155615151.toFixed(2);
+console.log(number4);
+
+///////////////////////////////////////////////////////////
+
+// KELİME
+///////////////////////////////////////////////////////////
+// FUNCTION
+// CONDITIONAL (if, else, ternary, switch)
+// LOOP (for, while,do-while)
+// Debugging
+// Exception Handling
+// Software Prensible
+// Senkron,asenkron (callback,promise, asyn-await)
+// Diziler
+// Objeler
+// DOM
+// Event
+// Listeners
+// LocalStorage
+// Interval , setTimeOut
+// Form Javascript ile nasıl input verileri alınır ?
+// jQery
