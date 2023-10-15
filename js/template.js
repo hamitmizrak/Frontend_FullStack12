@@ -163,35 +163,77 @@
 
 ///////////////////////////////////////////////////////////
 // SAYI 
-let number=50;
-console.log(number);
-console.log(typeof number);
+// let number=50;
+// console.log(number);
+// console.log(typeof number);
 
+// //let number2=Number("50.23") ;
+// let number2=parseInt("50.23") ;
+// console.log(number2);
+// console.log(typeof number2);
 
-let number2=Number("50.23") ;
-console.log(number2);
-console.log(typeof number2);
+// // sonuç: false ise sayıdır.
+// console.log(!isNaN(44));
 
-// sonuç: false ise sayıdır.
-console.log(!isNaN(44));
+// let bilimsel=1200000;
+// console.log(bilimsel);
 
-let bilimsel=1200000;
-console.log(bilimsel);
+// let bilimsel2=12E+5;
+// console.log(bilimsel2);
 
-let bilimsel2=12E+5;
-console.log(bilimsel2);
+// let bilimsel3=12E-5;
+// console.log(bilimsel3);
 
-let bilimsel3=12E-5;
-console.log(bilimsel3);
-
-const number4=12.45155615151.toFixed(2);
-console.log(number4);
+// const number4=12.45155615151.toFixed(2);
+// console.log(number4);
 
 ///////////////////////////////////////////////////////////
-
 // KELİME
+let vocabulary=" javascript ÖĞREniyorum javascript";
+console.log(vocabulary);
+console.log(vocabulary.length);
+console.log(vocabulary.trim().length);
+
+console.log(vocabulary.toUpperCase());
+console.log(vocabulary.toLowerCase());
+
+console.log(vocabulary.startsWith(" "));
+console.log(vocabulary.endsWith("t"));
+
+console.log(vocabulary.indexOf("javascript"));
+console.log(vocabulary.lastIndexOf("javascript"));
+
+console.log(vocabulary.charAt(3));
+console.log(vocabulary.concat(" .INC"));
+
+console.log(vocabulary.substring(0,3));
+console.log(vocabulary.substring(2));
+
+console.log(vocabulary.replace(vocabulary,"değiştir."));
+
+// ÖDEV NOT:5 adımı beraber yapalım
+// kullanıcı tarafından girilen bir kelimenin (prompt)
+// let userData= prompt("Lütfen bir şeyler yazınız")  ;
+// S-1) Kaç karakterlidir ? (length)
+// S-2) boşluklar alınarak Kaç karakterlidir ? (trim)
+// S-3) bütün kelimeyi küçük harfle göstermek ? (toLowerCase())
+// S-4) bütün kelimeyi büyük harfle göstermek ? (toUpperCase())
+// S-5) Kullanıcıdan alınan ilk kelimeyle , "javascript" kelimeyle değiştirin. (replace, substring, indexOf)
+// console.log(userData.replace("xxxxxxx"),"javascript");
+// console.log(userData.replace(userData.substring(0,userData.indexOf(" ")),"javascript"));
+// S-6) yazdığınız kelimede "javascript ile mi başlıyor" ? (startsWith()) 
+// S-7) yazdığınız kelimede "javascript ile mi bitiyor" ? (endsWith())
+// S-8) ilk harf nedir  ? (charAt())
+// S-9) girdiğiniz kelimenin sonuna "-ben js öğreniyorum" (concat())
+// S-10) girdiğiniz 0 ile 4 arasındaki indexi ekranda gösterin? (subString())
+
+
+
+
 ///////////////////////////////////////////////////////////
 // FUNCTION
+
+///////////////////////////////////////////////////////////
 // CONDITIONAL (if, else, ternary, switch)
 // LOOP (for, while,do-while)
 // Debugging
