@@ -189,29 +189,29 @@
 
 ///////////////////////////////////////////////////////////
 // KELİME
-let vocabulary=" javascript ÖĞREniyorum javascript";
-console.log(vocabulary);
-console.log(vocabulary.length);
-console.log(vocabulary.trim().length);
+// let vocabulary=" javascript ÖĞREniyorum javascript";
+// console.log(vocabulary);
+// console.log(vocabulary.length);
+// console.log(vocabulary.trim().length);
 
-console.log(vocabulary.toUpperCase());
-console.log(vocabulary.toLowerCase());
+// console.log(vocabulary.toUpperCase());
+// console.log(vocabulary.toLowerCase());
 
-console.log(vocabulary.startsWith(" "));
-console.log(vocabulary.endsWith("t"));
+// console.log(vocabulary.startsWith(" "));
+// console.log(vocabulary.endsWith("t"));
 
-console.log(vocabulary.indexOf("javascript"));
-console.log(vocabulary.lastIndexOf("javascript"));
+// console.log(vocabulary.indexOf("javascript"));
+// console.log(vocabulary.lastIndexOf("javascript"));
 
-console.log(vocabulary.charAt(3));
-console.log(vocabulary.concat(" .INC"));
+// console.log(vocabulary.charAt(3));
+// console.log(vocabulary.concat(" .INC"));
 
-console.log(vocabulary.substring(0,3));
-console.log(vocabulary.substring(2));
+// console.log(vocabulary.substring(0,3));
+// console.log(vocabulary.substring(2));
 
-console.log(vocabulary.replace(vocabulary,"değiştir."));
+// console.log(vocabulary.replace(vocabulary,"değiştir."));
 
-// ÖDEV NOT:5 adımı beraber yapalım
+// ÖDEV
 // kullanıcı tarafından girilen bir kelimenin (prompt)
 // let userData= prompt("Lütfen bir şeyler yazınız")  ;
 // S-1) Kaç karakterlidir ? (length)
@@ -227,11 +227,19 @@ console.log(vocabulary.replace(vocabulary,"değiştir."));
 // S-9) girdiğiniz kelimenin sonuna "-ben js öğreniyorum" (concat())
 // S-10) girdiğiniz 0 ile 4 arasındaki indexi ekranda gösterin? (subString())
 
-
-
-
 ///////////////////////////////////////////////////////////
 // FUNCTION
+function retursuzParametresiz(){
+    console.log("retursuz Parametresiz");
+}
+retursuzParametresiz()
+
+
+function retursuzParametreli(username,surname){
+    console.log("retursuz Parametreli "+username+" "+surname);
+}
+retursuzParametreli("Hamit","Mızrak")
+
 
 ///////////////////////////////////////////////////////////
 // CONDITIONAL (if, else, ternary, switch)
