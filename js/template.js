@@ -264,7 +264,6 @@ function normal(){
 }
 normal();
 
-
 // 2-) anonymous
 const anonymous= function (){
     console.log("Anonim ");
