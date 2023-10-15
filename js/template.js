@@ -71,7 +71,6 @@ console.log(number1%number2);
 // let num2= parseInt(prompt("Lütfen 2.sayıyı giriniz"));
 // console.log(num1+num2);
 
-
 //////////////////////////////////////////////////////////////////////
 // undefined
 let user1;
@@ -82,7 +81,6 @@ console.log(4/"asd");
 
 // Infinity
 console.log(4/0);
-
 
 // Escape Character
 console.log("\"");
@@ -96,3 +94,36 @@ console.log("1.satır\n2.satır");
 
 ///////////////////////////////////////////////////////////////////////
 // SORULAR
+// Örnek-1
+// Kullanıcıdan aldığımız 2 sayıyı toplayan JS kodu yazınız ? (prompt)
+let number111,number222,sum=0;
+number111=Number(prompt("Lütfen 1.sayıyı giriniz"));
+number222=Number(prompt("Lütfen 2.sayıyı giriniz"));
+console.log(number111+number222);
+
+// Örnek-2
+/* 
+    Kullanıcıdan aldığımız sayıyı dereceden fahrenhayt'a çeviren JS kodu yazınız ?
+    Formül: (derece*9/5)+32   
+*/
+let degree=0,fahranhayt=0;
+degree=Number(prompt("Lütfen Dereceyi giriniz"));
+fahranhayt=(degree*9/5)+32;
+console.log(fahranhayt);
+
+// Örnek-3
+// y=3x+4k ==> 1.dereceden 2 bilinmeyenli denklem algoritma JS kodu yazınız ?
+// Kullanıcı tarafından alınan x ve kdeğerlerini hesaplayan algoritma yazınız ?
+// x=2 k=3 y=? (y=18)
+let x=0,y=0,k=0;
+x=Number(prompt("Lütfen X giriniz"));
+k=Number(prompt("Lütfen K giriniz"));
+y=3*x+4*k;
+console.log("Y sonucu:"+y);
+
+// örnek-4 operatör işlemleri: aşağıdaki örneği javascript ile yapalım
+// 4+3*2(3:3-1*6+9:1+(3:3))
+console.log(4+3*2*(3/3-1*6+9/1+(3/3)));
+
+/////////////////////////////////////////////////////////////////////////////////$personName23
+// MATH
