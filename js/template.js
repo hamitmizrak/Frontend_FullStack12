@@ -219,8 +219,7 @@
 // S-3) bütün kelimeyi küçük harfle göstermek ? (toLowerCase())
 // S-4) bütün kelimeyi büyük harfle göstermek ? (toUpperCase())
 // S-5) Kullanıcıdan alınan ilk kelimeyle , "javascript" kelimeyle değiştirin. (replace, substring, indexOf)
-// console.log(userData.replace("xxxxxxx"),"javascript");
-// console.log(userData.replace(userData.substring(0,userData.indexOf(" ")),"javascript"));
+//    console.log(user.replace(user.substring(0,user.indexOf(" ")),"deneme")   );
 // S-6) yazdığınız kelimede "javascript ile mi başlıyor" ? (startsWith()) 
 // S-7) yazdığınız kelimede "javascript ile mi bitiyor" ? (endsWith())
 // S-8) ilk harf nedir  ? (charAt())
@@ -229,17 +228,59 @@
 
 ///////////////////////////////////////////////////////////
 // FUNCTION
-function retursuzParametresiz(){
-    console.log("retursuz Parametresiz");
+// 1
+// function retursuzParametresiz(){
+//     console.log("retursuz Parametresiz");
+//    let user="Merhabalar nasılsınız";
+//    //console.log(user.replace(user.substring(0,user.indexOf(" ")),"deneme")   );
+// }
+// retursuzParametresiz()
+
+// // 2
+// function retursuzParametreli(username,surname){
+//     console.log("retursuz Parametreli "+username+" "+surname);
+// }
+// retursuzParametreli("Hamit","Mızrak");
+
+// // 3
+// function returluParametresiz(){
+//    let user="Merhabalar nasılsınız";
+//    return user.replace(user.substring(0,user.indexOf(" ")),"javascript");
+// }
+// const data3= returluParametresiz();
+// console.log(data3);
+
+// // 4
+// function returluParametreli(user){
+//     return user.replace(user.substring(0,user.indexOf(" ")),"javascript");
+//  }
+//  const data4= returluParametreli("Merhabalar nasılsınız");
+//  console.log(data4);
+///////////////////////////////////////////////////////////
+
+// 1-) Normal
+function normal(){
+    console.log("Normal");
 }
-retursuzParametresiz()
+normal();
 
 
-function retursuzParametreli(username,surname){
-    console.log("retursuz Parametreli "+username+" "+surname);
+// 2-) anonymous
+const anonymous= function (){
+    console.log("Anonim ");
 }
-retursuzParametreli("Hamit","Mızrak")
+anonymous();
 
+// 3-) arrow
+const arrow=  () =>{
+    console.log("arrow ");
+}
+arrow();
+
+// 4-) Immedia ()()
+(() =>{
+    console.log("Immedia ");
+})()
 
 ///////////////////////////////////////////////////////////
 // CONDITIONAL (if, else, ternary, switch)
