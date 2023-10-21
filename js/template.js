@@ -291,7 +291,7 @@ const conditional = () => {
         console.log("Negatif");
     }
 }
-conditional()
+//conditional()
 
 
 // ternary
@@ -300,7 +300,7 @@ const conditional2 = () => {
     let result = (number > 0) ? "Pozitif" : "Negatif";
     console.log(result);
 }
-conditional2()
+//conditional2()
 
 
 // if else if else
@@ -320,7 +320,7 @@ const conditional3 = () => {
         console.log("1<=number<=5 dışındadır");
     }
 }
-conditional3()
+//conditional3()
 
 
 // switch case
@@ -347,51 +347,65 @@ const conditional4 = () => {
             break;
     }
 }
-conditional4()
+//conditional4()
 
 ///////////////////////////////////////////////////////////
 // LOOP (for, while,do-while)
 
 //for
-const loop1=()=>{
+const loop1 = () => {
     for (let i = 1; i <= 10; i++) {
-        document.writeln(i); 
+        document.writeln(i);
     }
 
     //sonsuz
     // for(;;){}
 }
-loop1()
+//loop1()
 
 // while
-const loop2=()=>{
+const loop2 = () => {
     document.writeln("<br/>");
     let i = 1;
-    while ( i <= 10) {
+    while (i <= 10) {
         document.writeln(i);
-        i=i+1;
+        i = i + 1;
     }
 
     // sonsuz
     // while(true){}
 }
-loop2()
+//loop2()
 
 // do-while
-const loop3=()=>{
+const loop3 = () => {
     document.writeln("<br/>");
     let i = 1;
-    do{
+    do {
         document.writeln(i);
-        i=i+1; 
+        i += 1;
     }
-    while ( i <= 10);
+    while (i <= 10);
 }
-loop3()
+//loop3()
 
 ///////////////////////////////////////////////////////////
 // Debugging
 // Exception Handling
+const exceptionHandlingData = () => {
+    try {
+        alertx("merhabalar");
+    } catch (err) {
+        console.error(err.name);
+        console.error(err.message);
+        console.error(err);
+    } finally {
+        console.log("api.close");
+    }
+    console.log("Diğer kod");
+    throw  "Bilerek hata oluşturdum";
+}
+exceptionHandlingData()
 
 ///////////////////////////////////////////////////////////
 // Software Prensible
@@ -400,11 +414,11 @@ loop3()
 ///////////////////////////////////////////////////////////
 // Diziler
 
-
-// Objeler
 ///////////////////////////////////////////////////////////
+// Objeler
 
 
+///////////////////////////////////////////////////////////
 // DOM
 // Event
 // Listeners
