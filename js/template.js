@@ -403,30 +403,98 @@ const exceptionHandlingData = () => {
         console.log("api.close");
     }
     console.log("Diğer kod");
-    throw  "Bilerek hata oluşturdum";
+    throw "Bilerek hata oluşturdum";
 }
-exceptionHandlingData()
+//exceptionHandlingData()
 
 ///////////////////////////////////////////////////////////
 // Software Prensible
-// Senkron,asenkron (callback,promise, asyn-await)
+// S.O.L.I.D 
+// Senkron,asenkron (callback , promise , asyn-await)
 
 ///////////////////////////////////////////////////////////
 // Diziler
+let array = () => {
+    let arr = [5,3,6,7,8,1,9];
+    console.log(arr);
+    console.log(arr[0]);
+    console.log(arr[7-1]);
+    arr[7]=2;
+    console.log(arr[arr.length-1]);
+
+    // push,unshift(EKLEME)    pop,shift(ÇIKARMA)
+    arr.push(Math.floor(Math.random()*9+1) );
+    console.log(arr);
+    console.log(arr[arr.length-1]);
+    arr.unshift(Math.floor(Math.random()*9+1))
+    console.log(arr);
+    arr.pop()
+    arr.shift()
+    console.log(arr);
+
+    arr.sort();
+    console.log(arr);
+
+    arr.reverse();
+    console.log(arr);
+
+    arr.sort().reverse();
+    console.log(arr);
+}
+array();
+
+const randomArray=()=>{
+    let arr=[];
+    for (let i = 0; i < 10; i++) {
+        arr[i]=Math.floor(Math.random()*9+1);
+    }
+    console.log(arr);
+    return arr;
+}
+
+
+let array2 = () => {
+    let arr = randomArray();
+    console.log("---------------");
+    console.log(arr);
+
+    // iterative for 
+    document.writeln("<br/>------Iterative For---------<br/>");
+    for (let i = 0; i < arr.length; i++) {
+    document.writeln(arr[i])
+    }
+
+    document.writeln("<br/>------For In---------<br/>");
+    // for In
+    for(let temp in arr){
+        document.writeln(temp+" => "+arr[temp]+"<br/>")
+    }
+
+    document.writeln("<br/>------For Of---------<br/>");
+     // for of
+     for(let temp of arr){
+        document.writeln(temp)
+    }
+
+    document.writeln("<br/>------ForEach---------<br/>");
+    arr.forEach((value, index ,array)=>{
+        document.writeln(index+" => "+value+"<br/>")
+    });
+}
+array2();
+///////////////////////////////////////////////////////////
+// Event
+// Listeners
+// Interval , setTimeOut
+// LocalStorage
 
 ///////////////////////////////////////////////////////////
 // Objeler
 
-
 ///////////////////////////////////////////////////////////
 // DOM
-// Event
-// Listeners
 
 ///////////////////////////////////////////////////////////
-// LocalStorage
 
-///////////////////////////////////////////////////////////
-// Interval , setTimeOut
 // Form Javascript ile nasıl input verileri alınır ?
 // jQery
