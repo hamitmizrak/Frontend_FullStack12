@@ -500,9 +500,30 @@ let array3 = () => {
    console.log(typeof data2);
 
    // splice
-   
+   let arr2=[1,2,3,4,5,6,7,8,9]
+   console.log(arr2);
+   // 0: başlama indisi
+   // 3: kaç tane veri silinecek
+   arr2.splice(0,3)
+   console.log(arr2);
+
+   // 0: başlama indisi
+   // 3: kaç tane veri silinecek
+   // 0'dan başla 3 tane veri sil yerine hello yazısını ekle
+   arr2.splice(0,3,"hello")
+   console.log(arr2);
+
+
+   // 0: başlama indisi
+   // 0: kaç tane veri silinecek
+   // 0'dan başla 3 tane veri sil yerine hello yazısını ekle
+   arr2.splice(0,0,"merhabalar")
+   console.log(arr2);
 }
 array3();
+
+   // forEach filter map
+   
 ///////////////////////////////////////////////////////////
 // Event
 // Listeners
