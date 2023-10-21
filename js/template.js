@@ -1,6 +1,6 @@
- // <!-- HTML comment -->
- // /* css comment */
- // JS single comment
+// <!-- HTML comment -->
+// /* css comment */
+// JS single comment
 //  /* multiple comment */
 
 //  window.console.log("console log");
@@ -103,8 +103,8 @@
 
 // Örnek-2
 /* 
-    Kullanıcıdan aldığımız sayıyı dereceden fahrenhayt'a çeviren JS kodu yazınız ?
-    Formül: (derece*9/5)+32   
+    Kullanıcıdan aldığımız sayıyı dereceden fahrenhayt'a çeviren JS kodu yazınız ?
+    Formül: (derece*9/5)+32   
 */
 // let degree=0,fahranhayt=0;
 // degree=Number(prompt("Lütfen Dereceyi giriniz"));
@@ -258,42 +258,122 @@
 //  console.log(data4);
 ///////////////////////////////////////////////////////////
 
-// 1-) Normal
-function normal(){
-    console.log("Normal");
-}
-normal();
+// // 1-) Normal
+// function normal(){
+//     console.log("Normal");
+// }
+// normal();
 
-// 2-) anonymous
-const anonymous= function (){
-    console.log("Anonim ");
-}
-anonymous();
+// // 2-) anonymous
+// const anonymous= function (){
+//     console.log("Anonim ");
+// }
+// anonymous();
 
-// 3-) arrow
-const arrow=  () =>{
-    console.log("arrow ");
-}
-arrow();
+// // 3-) arrow
+// const arrow=  () =>{
+//     console.log("arrow ");
+// }
+// arrow();
 
-// 4-) Immedia ()()
-(() =>{
-    console.log("Immedia ");
-})()
+// // 4-) Immedia ()()
+// (() =>{
+//     console.log("Immedia ");
+// })()
 
 ///////////////////////////////////////////////////////////
 // CONDITIONAL (if, else, ternary, switch)
+const conditional = () => {
+    let number = 15;
+    if (number > 0) {
+        console.log("Pozitif");
+    } else {
+        console.log("Negatif");
+    }
+}
+conditional()
+
+
+// ternary
+const conditional2 = () => {
+    let number = 15;
+    let result = (number > 0) ? "Pozitif" : "Negatif";
+    console.log(result);
+}
+conditional2()
+
+const conditional3 = () => {
+    let number = 5;
+    if (number === 5) {
+        console.log("sayı 5");
+    } else if (number === 1) {
+        console.log("sayı 1");
+    } else if (number === 2) {
+        console.log("sayı 2");
+    } else if (number === 3) {
+        console.log("sayı 3");
+    } else if (number === 4) {
+        console.log("sayı 4");
+    } else {
+        console.log("1<=number<=5 dışındadır");
+    }
+}
+conditional3()
+
+
+// switch case
+const conditional4 = () => {
+    let number = 5;
+    switch (number) {
+        case 5:
+            console.log("sayı 5");
+            break;
+        case 1:
+            console.log("sayı 1");
+            break;
+        case 2:
+            console.log("sayı 2");
+            break;
+        case 3:
+            console.log("sayı 3");
+            break;
+        case 4:
+            console.log("sayı 4");
+            break;
+        default:
+            console.log("1<=number<=5 dışındadır");
+            break;
+    }
+}
+conditional4()
+
+///////////////////////////////////////////////////////////
 // LOOP (for, while,do-while)
+
+///////////////////////////////////////////////////////////
 // Debugging
 // Exception Handling
+
+///////////////////////////////////////////////////////////
 // Software Prensible
 // Senkron,asenkron (callback,promise, asyn-await)
+
+///////////////////////////////////////////////////////////
 // Diziler
+
+
 // Objeler
+///////////////////////////////////////////////////////////
+
+
 // DOM
 // Event
 // Listeners
+
+///////////////////////////////////////////////////////////
 // LocalStorage
+
+///////////////////////////////////////////////////////////
 // Interval , setTimeOut
 // Form Javascript ile nasıl input verileri alınır ?
 // jQery
