@@ -441,7 +441,7 @@ let array = () => {
     arr.sort().reverse();
     console.log(arr);
 }
-array();
+//array();
 
 const randomArray=()=>{
     let arr=[];
@@ -481,7 +481,28 @@ let array2 = () => {
         document.writeln(index+" => "+value+"<br/>")
     });
 }
-array2();
+//array2();
+
+// array Function
+let array3 = () => {
+    let arr = randomArray();
+
+    // toString => diziyi String'e çeviriyor.
+   let data= arr.toString().substring(0,4);
+   console.log(data);
+
+   // join => dizideki virgülleri kaldırıyor 
+   // yerine bizim belirlediğimiz özellikleri ekliyor.
+   // ve String'e çeviriyor
+   let data2= arr.join(" ")
+   console.log(data2);
+   console.log(data2.substring(0,4));
+   console.log(typeof data2);
+
+   // splice
+   
+}
+array3();
 ///////////////////////////////////////////////////////////
 // Event
 // Listeners
