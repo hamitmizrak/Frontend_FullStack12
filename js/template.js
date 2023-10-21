@@ -415,18 +415,18 @@ const exceptionHandlingData = () => {
 ///////////////////////////////////////////////////////////
 // Diziler
 let array = () => {
-    let arr = [5,3,6,7,8,1,9];
+    let arr = [5, 3, 6, 7, 8, 1, 9];
     console.log(arr);
     console.log(arr[0]);
-    console.log(arr[7-1]);
-    arr[7]=2;
-    console.log(arr[arr.length-1]);
+    console.log(arr[7 - 1]);
+    arr[7] = 2;
+    console.log(arr[arr.length - 1]);
 
     // push,unshift(EKLEME)    pop,shift(ÇIKARMA)
-    arr.push(Math.floor(Math.random()*9+1) );
+    arr.push(Math.floor(Math.random() * 9 + 1));
     console.log(arr);
-    console.log(arr[arr.length-1]);
-    arr.unshift(Math.floor(Math.random()*9+1))
+    console.log(arr[arr.length - 1]);
+    arr.unshift(Math.floor(Math.random() * 9 + 1))
     console.log(arr);
     arr.pop()
     arr.shift()
@@ -443,10 +443,10 @@ let array = () => {
 }
 //array();
 
-const randomArray=()=>{
-    let arr=[];
+const randomArray = () => {
+    let arr = [];
     for (let i = 0; i < 10; i++) {
-        arr[i]=Math.floor(Math.random()*9+1);
+        arr[i] = Math.floor(Math.random() * 9 + 1);
     }
     console.log(arr);
     return arr;
@@ -461,24 +461,24 @@ let array2 = () => {
     // iterative for 
     document.writeln("<br/>------Iterative For---------<br/>");
     for (let i = 0; i < arr.length; i++) {
-    document.writeln(arr[i])
+        document.writeln(arr[i])
     }
 
     document.writeln("<br/>------For In---------<br/>");
     // for In
-    for(let temp in arr){
-        document.writeln(temp+" => "+arr[temp]+"<br/>")
+    for (let temp in arr) {
+        document.writeln(temp + " => " + arr[temp] + "<br/>")
     }
 
     document.writeln("<br/>------For Of---------<br/>");
-     // for of
-     for(let temp of arr){
+    // for of
+    for (let temp of arr) {
         document.writeln(temp)
     }
 
     document.writeln("<br/>------ForEach---------<br/>");
-    arr.forEach((value, index ,array)=>{
-        document.writeln(index+" => "+value+"<br/>")
+    arr.forEach((value, index, array) => {
+        document.writeln(index + " => " + value + "<br/>")
     });
 }
 //array2();
@@ -488,49 +488,78 @@ let array3 = () => {
     let arr = randomArray();
 
     // toString => diziyi String'e çeviriyor.
-   let data= arr.toString().substring(0,4);
-   console.log(data);
+    let data = arr.toString().substring(0, 4);
+    console.log(data);
 
-   // join => dizideki virgülleri kaldırıyor 
-   // yerine bizim belirlediğimiz özellikleri ekliyor.
-   // ve String'e çeviriyor
-   let data2= arr.join(" ")
-   console.log(data2);
-   console.log(data2.substring(0,4));
-   console.log(typeof data2);
+    // join => dizideki virgülleri kaldırıyor 
+    // yerine bizim belirlediğimiz özellikleri ekliyor.
+    // ve String'e çeviriyor
+    let data2 = arr.join(" ")
+    console.log(data2);
+    console.log(data2.substring(0, 4));
+    console.log(typeof data2);
 
-   // splice
-   let arr2=[1,2,3,4,5,6,7,8,9]
-   console.log(arr2);
-   // 0: başlama indisi
-   // 3: kaç tane veri silinecek
-   arr2.splice(0,3)
-   console.log(arr2);
+    // splice
+    let arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    console.log(arr2);
+    // 0: başlama indisi
+    // 3: kaç tane veri silinecek
+    arr2.splice(0, 3)
+    console.log(arr2);
 
-   // 0: başlama indisi
-   // 3: kaç tane veri silinecek
-   // 0'dan başla 3 tane veri sil yerine hello yazısını ekle
-   arr2.splice(0,3,"hello")
-   console.log(arr2);
+    // 0: başlama indisi
+    // 3: kaç tane veri silinecek
+    // 0'dan başla 3 tane veri sil yerine hello yazısını ekle
+    arr2.splice(0, 3, "hello")
+    console.log(arr2);
 
+    // 0: başlama indisi
+    // 0: kaç tane veri silinecek
+    // 0'dan başla 3 tane veri sil yerine hello yazısını ekle
+    arr2.splice(0, 0, "merhabalar")
+    console.log(arr2);
 
-   // 0: başlama indisi
-   // 0: kaç tane veri silinecek
-   // 0'dan başla 3 tane veri sil yerine hello yazısını ekle
-   arr2.splice(0,0,"merhabalar")
-   console.log(arr2);
+    arr2.fill("Türkiye")
+    console.log(arr2);
+
+    arr2.fill("Türkiye", 0, 2)
+    console.log(arr2);
 }
-array3();
+//array3();
 
-   // forEach filter map
-   
+
+// forEach filter map (ES5)
+let array4 = () => {
+    let dizi = randomArray();
+
+    // forEach
+    dizi.forEach((value, index, array) => {
+        // console.log(index + " => " + value + " " + array);
+        //console.log(index + " => " + value);
+    });
+
+    console.log("------------------------------");
+    // verilen sayılardan çift olanaları bulalım
+    // Bulduğumuz bu çift sayıların sonuna 10 ekleyelim
+    // Çıkan sonuçu ekranda gösterelim.
+    dizi.filter(function (value, index, array) {
+        return value % 2 == 0;
+    }).map((value, index, array)=>{
+        return value+10;
+    }).forEach((value, index, array) => {
+        console.log(index + " => " + value);
+    }); 
+}
+array4();
+
+
 ///////////////////////////////////////////////////////////
 // Event
 // Listeners
-// Interval , setTimeOut
 // LocalStorage
 
 ///////////////////////////////////////////////////////////
+// Interval , setTimeOut
 // Objeler
 
 ///////////////////////////////////////////////////////////
