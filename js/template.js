@@ -302,6 +302,8 @@ const conditional2 = () => {
 }
 conditional2()
 
+
+// if else if else
 const conditional3 = () => {
     let number = 5;
     if (number === 5) {
@@ -349,6 +351,43 @@ conditional4()
 
 ///////////////////////////////////////////////////////////
 // LOOP (for, while,do-while)
+
+//for
+const loop1=()=>{
+    for (let i = 1; i <= 10; i++) {
+        document.writeln(i); 
+    }
+
+    //sonsuz
+    // for(;;){}
+}
+loop1()
+
+// while
+const loop2=()=>{
+    document.writeln("<br/>");
+    let i = 1;
+    while ( i <= 10) {
+        document.writeln(i);
+        i=i+1;
+    }
+
+    // sonsuz
+    // while(true){}
+}
+loop2()
+
+// do-while
+const loop3=()=>{
+    document.writeln("<br/>");
+    let i = 1;
+    do{
+        document.writeln(i);
+        i=i+1; 
+    }
+    while ( i <= 10);
+}
+loop3()
 
 ///////////////////////////////////////////////////////////
 // Debugging
