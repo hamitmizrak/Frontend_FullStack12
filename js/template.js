@@ -527,7 +527,6 @@ let array3 = () => {
 }
 //array3();
 
-
 // forEach filter map (ES5)
 let array4 = () => {
     let dizi = randomArray();
@@ -552,11 +551,21 @@ let array4 = () => {
 }
 array4();
 
-
 ///////////////////////////////////////////////////////////
 // Event
-// Listeners
-// LocalStorage
+const ondblclickData=()=>{
+    alert("1 kere Tıklandı");
+
+    let uname=prompt("adınız");
+    // LocalStorage
+    localStorage.setItem("user_name",uname);
+    console.log(localStorage.getItem("user_name"));
+}
+
+const onclickData=()=>{
+    alert("deneme");
+    window.confirm("Başka bir sayfaya gitmek istiyor musunuz ?") ? window.location="http://www.google.com": window.alert("Aynı sayfada kalındı.")
+}
 
 ///////////////////////////////////////////////////////////
 // Interval , setTimeOut
@@ -564,8 +573,7 @@ array4();
 
 ///////////////////////////////////////////////////////////
 // DOM
-
+// Listeners
 ///////////////////////////////////////////////////////////
-
 // Form Javascript ile nasıl input verileri alınır ?
 // jQery
