@@ -663,20 +663,27 @@ const domManipulationFunction = () => {
     let userData = "Merhabalar";
     // document.getElementById("param_id").innerHTML ="<b>"+userData+"</b> ";
     // document.getElementById("param_id").innerHTML = `<b>${userData}</b>`;
- 
+
     // innerText
     // document.getElementById("param_id").innerText = `<b>${userData}</b>`;
 
     //css
-    const data=document.querySelector(".param_class");
-    data.innerHTML=`<b>${userData}</b>`;
-    data.style.color="blue";
-    data.style.backgroundColor="black";
-    data.style.padding="3rem";
-    data.style.marginTop="2rem";
+    const data = document.querySelector(".param_class");
+    data.innerHTML = `<b>${userData}</b>`;
+    data.style.color = "blue";
+    data.style.backgroundColor = "black";
+    data.style.padding = "3rem";
+    data.style.marginTop = "2rem";
 }
 ///////////////////////////////////////////////////////////
 // Listeners
+(() => {
+    let data = document.getElementById("param_id");
+    data.addEventListener("click", function (e) {
+        e.preventDefault();
+        alert("Merhabalar iyi okmalar "+e.target+" "+e.value)
+    })
+})()
 
 ///////////////////////////////////////////////////////////
 // jQery
