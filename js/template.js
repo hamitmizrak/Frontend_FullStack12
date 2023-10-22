@@ -543,52 +543,86 @@ let array4 = () => {
     // Çıkan sonuçu ekranda gösterelim.
     dizi.filter(function (value, index, array) {
         return value % 2 == 0;
-    }).map((value, index, array)=>{
-        return value+10;
+    }).map((value, index, array) => {
+        return value + 10;
     }).forEach((value, index, array) => {
         console.log(index + " => " + value);
-    }); 
+    });
 }
 //array4();
 
 ///////////////////////////////////////////////////////////
 // Event
-const ondblclickData=()=>{
+const ondblclickData = () => {
     alert("1 kere Tıklandı");
 
-    let uname=prompt("adınız");
+    let uname = prompt("adınız");
     // LocalStorage
-    localStorage.setItem("user_name",uname);
+    localStorage.setItem("user_name", uname);
     console.log(localStorage.getItem("user_name"));
 }
 
-const onclickData=()=>{
+const onclickData = () => {
     alert("deneme");
-    window.confirm("Başka bir sayfaya gitmek istiyor musunuz ?") ? window.location="http://www.google.com": window.alert("Aynı sayfada kalındı.")
+    window.confirm("Başka bir sayfaya gitmek istiyor musunuz ?") ? window.location = "http://www.google.com" : window.alert("Aynı sayfada kalındı.")
 }
 
 ///////////////////////////////////////////////////////////
 // setInterval(()=>{},3000) , setTimeOut(()=>{},3000)
 
 // setInterval: Belli zaman aralığında sürekli çalışır.
-const setIntervalData=()=>{
-    setInterval(()=>{
+const setIntervalData = () => {
+    setInterval(() => {
         console.log("setInterval Log");
-    },1000)
+    }, 1000)
 }
 //setIntervalData()
 
 // setTimeout : Belli zaman aralığında bir kere çalışır ve sonra durur.
-const setTimeOutData=()=>{
-    setTimeout(()=>{
+const setTimeOutData = () => {
+    setTimeout(() => {
         console.log("set Time out Log");
-    },1000)
+    }, 1000)
 }
 //setTimeOutData()
 
 ///////////////////////////////////////////////////////////
 // Objeler
+const objectData = () => {
+    let person = {
+        uname:"Hamit",
+        usurname:"Mızrak",
+        unumber:44,
+        isLogin:true,
+        softwareTech:["html5","css3","bootstrap5","js"],
+        fullName:function(){
+            console.log(this.uname+" "+this.usurname);
+            console.log(`${this.uname} ${this.usurname}` );
+        },
+        "java":{
+            name:"java",
+            year:10
+        }
+    };
+    console.log(person);
+    console.log(person.uname);
+    console.log(person["uname"]);
+    console.log(person.unumber);
+    console.log(person["unumber"]);
 
+    console.log(person.isLogin);
+    console.log(person.softwareTech);
+    console.log(person.softwareTech[0]);
+    console.log(person.fullName());
+    console.log(person.java.year);
+    console.log("----------------------------");
+
+    ////////// 
+    for(let data in person){
+        console.log(data+" => "+person[data]);
+    }
+}
+objectData();
 ///////////////////////////////////////////////////////////
 // DOM
 // Listeners
