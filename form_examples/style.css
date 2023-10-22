@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --template_bg_color: black;
+    --template_color: white;
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    background-color: var(--template_bg_color);
+    color: var(--template_color);
+    font-family: 'Playfair Display', serif;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 2rem auto;
+}
+
+/* ******************************************************************* */
+/* Container*/
+.container_data {
+  
+    position: relative;
+    /* border: 1px solid rgba(255, 255, 255, 0.9); */
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* X */
+    align-items: center;     /* Y */
+
+    /* box-shadow */
+    -webkit-box-shadow: 11px 4px 18px 5px rgba(237, 61, 111, 1);
+    -moz-box-shadow: 11px 4px 18px 5px rgba(237, 61, 111, 1);
+    box-shadow: 11px 4px 18px 5px rgba(237, 61, 111, 1);
+}
+
+/* icon */
+#icon_id {
+    color: rgb(215, 81, 15);
+    position: absolute;
+    margin-left: 0.5rem;
+    margin-top: 0.6rem;
+    font-size: 0.8rem;
+}
+
+/* Input */
+.input_class {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--template_color);
+    font-size: .8rem;
+    padding: 0.5rem;
+    padding-left: 2rem;
+}
+
+/* Input Focus */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    background-color: var(--template_color);
+    color: var(--template_bg_color);
+}
+
+/* Button */
+.button_data {
+    margin-top: 5%;
+    margin-left: 15%;
+}
+
+/* .button_data>button */
+button[type="reset"],
+button[type="submit"],
+button[type="button"] {
+    width: 25%;
+    font-size: 0.8rem;
+    background-color: chocolate;
+    color: white;
+    padding: .2rem;
+    border: none;
+    transition: all 3s;
+    border-radius: .3rem;
+}
+
+.button_data>button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: chocolate;
+    transition: ease-in-out 2s;
+}
+
+/* Responsive Design */
