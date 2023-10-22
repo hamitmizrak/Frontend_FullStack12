@@ -659,12 +659,27 @@ objectData2()
 // DOM
 const domManipulationFunction = () => {
     // alert("çalıştı")
-    let userData = prompt("Lütfen Adınızı Soyadınızı yazınız");
+    //let userData = prompt("Lütfen Adınızı Soyadınızı yazınız");
+    let userData = "Merhabalar";
     // document.getElementById("param_id").innerHTML ="<b>"+userData+"</b> ";
-    document.getElementById("param_id").innerHTML =`<b>${userData}</b>`; 
-}
+    // document.getElementById("param_id").innerHTML = `<b>${userData}</b>`;
+ 
+    // innerText
+    // document.getElementById("param_id").innerText = `<b>${userData}</b>`;
 
+    //css
+    const data=document.querySelector(".param_class");
+    data.innerHTML=`<b>${userData}</b>`;
+    data.style.color="blue";
+    data.style.backgroundColor="black";
+    data.style.padding="3rem";
+    data.style.marginTop="2rem";
+}
+///////////////////////////////////////////////////////////
 // Listeners
+
+///////////////////////////////////////////////////////////
+// jQery
+
 ///////////////////////////////////////////////////////////
 // Form Javascript ile nasıl input verileri alınır ?
-// jQery
