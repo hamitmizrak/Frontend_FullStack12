@@ -16,6 +16,8 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 
 <body class="container">
@@ -51,12 +53,14 @@
             <!-- BUTTON -->
             <div class="button_data">
                 <button type="reset" id="button_reset" name="button_reset"> <i class="fa-solid fa-trash"></i> </button>
-                <button type="submit" id="button_submit" name="button_submit" style="background-color:blue"><i
+                <button type="submit" id="button_submit" onclick="formInput()" name="button_submit" style="background-color:blue"><i
                         class="fa-solid fa-paper-plane"></i></button>
                 <button type="button" style="background-color:orange"><i class="fa-regular fa-registered"></i></button>
             </div>
         </form>
     </div>
+
+    <p id="param_id"></p>
 
     <script src="template.js"></script>
 </body>
