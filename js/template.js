@@ -549,7 +549,7 @@ let array4 = () => {
         console.log(index + " => " + value);
     }); 
 }
-array4();
+//array4();
 
 ///////////////////////////////////////////////////////////
 // Event
@@ -569,6 +569,24 @@ const onclickData=()=>{
 
 ///////////////////////////////////////////////////////////
 // setInterval(()=>{},3000) , setTimeOut(()=>{},3000)
+
+// setInterval: Belli zaman aralığında sürekli çalışır.
+const setIntervalData=()=>{
+    setInterval(()=>{
+        console.log("setInterval Log");
+    },1000)
+}
+//setIntervalData()
+
+// setTimeout : Belli zaman aralığında bir kere çalışır ve sonra durur.
+const setTimeOutData=()=>{
+    setTimeout(()=>{
+        console.log("set Time out Log");
+    },1000)
+}
+//setTimeOutData()
+
+///////////////////////////////////////////////////////////
 // Objeler
 
 ///////////////////////////////////////////////////////////
