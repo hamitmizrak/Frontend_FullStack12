@@ -590,18 +590,18 @@ const setTimeOutData = () => {
 // Objeler
 const objectData = () => {
     let person = {
-        uname:"Hamit",
-        usurname:"Mızrak",
-        unumber:44,
-        isLogin:true,
-        softwareTech:["html5","css3","bootstrap5","js"],
-        fullName:function(){
-            console.log(this.uname+" "+this.usurname);
-            console.log(`${this.uname} ${this.usurname}` );
+        uname: "Hamit",
+        usurname: "Mızrak",
+        unumber: 44,
+        isLogin: true,
+        softwareTech: ["html5", "css3", "bootstrap5", "js"],
+        fullName: function () {
+            console.log(this.uname + " " + this.usurname);
+            console.log(`${this.uname} ${this.usurname}`);
         },
-        "java":{
-            name:"java",
-            year:10
+        "java": {
+            name: "java",
+            year: 10
         }
     };
     console.log(person);
@@ -618,8 +618,8 @@ const objectData = () => {
     console.log("----------------------------");
 
     //////////  LOOP
-    for(let data in person){
-        console.log(data+" => "+person[data]);
+    for (let data in person) {
+        console.log(data + " => " + person[data]);
     }
 }
 //objectData();
@@ -627,36 +627,43 @@ const objectData = () => {
 
 const objectData2 = () => {
     let person = {
-        uname:"Hamit",
-        usurname:"Mızrak",
-        unumber:44,
-        isLogin:true,
-        softwareTech:["html5","css3","bootstrap5","js"],
-        fullName:function(){
-            console.log(this.uname+" "+this.usurname);
-            console.log(`${this.uname} ${this.usurname}` );
+        uname: "Hamit",
+        usurname: "Mızrak",
+        unumber: 44,
+        isLogin: true,
+        softwareTech: ["html5", "css3", "bootstrap5", "js"],
+        fullName: function () {
+            console.log(this.uname + " " + this.usurname);
+            console.log(`${this.uname} ${this.usurname}`);
         },
-        "java":{
-            name:"java",
-            year:10
+        "java": {
+            name: "java",
+            year: 10
         }
     };
-   console.log(person);
+    console.log(person);
 
-   // String'e çevrilmil bir object
-   const objectToString=JSON.stringify(person);
-   console.log(objectToString);
+    // String'e çevrilmil bir object
+    const objectToString = JSON.stringify(person);
+    console.log(objectToString);
 
-   // String içindeki objelerde uname value'su almak
-   const inStringName=JSON.parse(objectToString).uname;
-   console.log(inStringName);
+    // String içindeki objelerde uname value'su almak
+    const inStringName = JSON.parse(objectToString).uname;
+    console.log(inStringName);
 
-   // JSON
+    // JSON
 }
 objectData2()
 
 ///////////////////////////////////////////////////////////
 // DOM
+const domManipulationFunction = () => {
+    // alert("çalıştı")
+    let userData = prompt("Lütfen Adınızı Soyadınızı yazınız");
+    // document.getElementById("param_id").innerHTML ="<b>"+userData+"</b> ";
+    document.getElementById("param_id").innerHTML =`<b>${userData}</b>`; 
+}
+
 // Listeners
 ///////////////////////////////////////////////////////////
 // Form Javascript ile nasıl input verileri alınır ?
