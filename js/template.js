@@ -617,12 +617,44 @@ const objectData = () => {
     console.log(person.java.year);
     console.log("----------------------------");
 
-    ////////// 
+    //////////  LOOP
     for(let data in person){
         console.log(data+" => "+person[data]);
     }
 }
-objectData();
+//objectData();
+
+
+const objectData2 = () => {
+    let person = {
+        uname:"Hamit",
+        usurname:"Mızrak",
+        unumber:44,
+        isLogin:true,
+        softwareTech:["html5","css3","bootstrap5","js"],
+        fullName:function(){
+            console.log(this.uname+" "+this.usurname);
+            console.log(`${this.uname} ${this.usurname}` );
+        },
+        "java":{
+            name:"java",
+            year:10
+        }
+    };
+   console.log(person);
+
+   // String'e çevrilmil bir object
+   const objectToString=JSON.stringify(person);
+   console.log(objectToString);
+
+   // String içindeki objelerde uname value'su almak
+   const inStringName=JSON.parse(objectToString).uname;
+   console.log(inStringName);
+
+   // JSON
+}
+objectData2()
+
 ///////////////////////////////////////////////////////////
 // DOM
 // Listeners
